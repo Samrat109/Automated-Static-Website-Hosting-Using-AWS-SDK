@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f6f2">
+    <meta name="description" content="A lightweight, automated static website deployment to Amazon S3 with Python and Boto3.">
+    <title>CloudCanvas — Static sites, simply shipped</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="CloudCanvas home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M9.2 21.5h13.1a5.2 5.2 0 0 0 .2-10.4 7 7 0 0 0-13.2 1.5 4.5 4.5 0 0 0-.1 8.9Z" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="m13 17 3-3 3 3m-3-3v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>cloudcanvas<span class="brand-period">.</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+            <span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+            <a href="#how-it-works">How it works</a>
+            <a href="#stack">The stack</a>
+            <a class="nav-cta" href="#get-started">Get started <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero page-wrap">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="eyebrow-dot"></span> THE SMALL-SITE, BIG-IDEA DEPLOYER</div>
+                <h1>Your next idea<br>deserves <span>the cloud.</span></h1>
+                <p class="hero-description">A simple, repeatable way to turn a folder of files into a website. Python handles the setup. Amazon S3 serves the rest.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#get-started">Explore the setup <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-icon" aria-hidden="true">✳</span>
+                    No framework. No build step. Just the essentials.
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Illustration of a static website being deployed to Amazon S3">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+                <div class="visual-label"><span class="eyebrow-dot"></span> DEPLOYMENT, DE-MYSTIFIED</div>
+                <div class="cloud cloud-back" aria-hidden="true">
+                    <svg viewBox="0 0 112 76" fill="none"><path d="M28 60h56a20 20 0 0 0 .8-40A28 28 0 0 0 32 26a17 17 0 0 0-4 34Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="deploy-card">
+                    <div class="card-topline"><span>YOUR PROJECT</span><span class="file-count">03 FILES</span></div>
+                    <div class="file-row"><span class="file-icon html-icon">5</span><span>index.html</span><span class="file-check">✓</span></div>
+                    <div class="file-row"><span class="file-icon css-icon">✳</span><span>style.css</span><span class="file-check">✓</span></div>
+                    <div class="file-row"><span class="file-icon js-icon">JS</span><span>script.js</span><span class="file-check">✓</span></div>
+                    <div class="upload-track"><span></span></div>
+                    <div class="upload-caption"><span>Ready when you are</span><span>→ S3</span></div>
+                </div>
+                <div class="cloud cloud-front" aria-hidden="true">
+                    <svg viewBox="0 0 112 76" fill="none"><path d="M28 60h56a20 20 0 0 0 .8-40A28 28 0 0 0 32 26a17 17 0 0 0-4 34Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>S3</span>
+                </div>
+                <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+                <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+                <span class="visual-caption">A few files in.<br>A whole website out.</span>
+            </div>
+        </section>
+
+        <section class="principles page-wrap" aria-label="Project highlights">
+            <div class="principle"><span class="principle-number">01</span><span>Configure once</span></div>
+            <div class="principle"><span class="principle-number">02</span><span>Upload everything</span></div>
+            <div class="principle"><span class="principle-number">03</span><span>Share your site</span></div>
+            <div class="principle-aside">A clear path from local folder to live endpoint.</div>
+        </section>
+
+        <section class="how-section" id="how-it-works">
+            <div class="page-wrap how-layout">
+                <div class="section-intro">
+                    <div class="eyebrow"><span class="eyebrow-number">01 / THE FLOW</span></div>
+                    <h2>Less cloud<br>conjuring.<br><span>More creating.</span></h2>
+                    <p>One Python script takes care of the cloud setup and file upload, so you can stay focused on what you're making.</p>
+                    <a class="text-link dark-link" href="#get-started">Get the overview <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="steps">
+                    <article class="step">
+                        <div class="step-icon step-python" aria-hidden="true"><span>Py</span></div>
+                        <div class="step-content"><div class="step-meta">STEP 01 <span>·</span> CONFIGURE</div><h3>Set your destination</h3><p>Choose an AWS region and S3 bucket. The script takes care of website hosting and the permissions it needs.</p></div>
+                        <span class="step-arrow" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="step">
+                        <div class="step-icon step-files" aria-hidden="true"><span>↥</span></div>
+                        <div class="step-content"><div class="step-meta">STEP 02 <span>·</span> UPLOAD</div><h3>Send your site on its way</h3><p>HTML, CSS, JavaScript — your website files are uploaded with the right content types, automatically.</p></div>
+                        <span class="step-arrow" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="step">
+                        <div class="step-icon step-cloud" aria-hidden="true"><span>☁</span></div>
+                        <div class="step-content"><div class="step-meta">STEP 03 <span>·</span> SHARE</div><h3>Get a ready-to-visit URL</h3><p>Once deployment is complete, your S3 website endpoint is printed and ready to open in a browser.</p></div>
+                        <span class="step-arrow" aria-hidden="true">↗</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="stack-section page-wrap" id="stack">
+            <div class="stack-heading">
+                <div>
+                    <div class="eyebrow"><span class="eyebrow-number">02 / THE TOOLKIT</span></div>
+                    <h2>Just the right<br><span>building blocks.</span></h2>
+                </div>
+                <p>A deliberately lean stack that makes the moving parts easy to see, change, and make your own.</p>
+            </div>
+            <div class="stack-grid">
+                <article class="stack-card stack-s3">
+                    <div class="stack-card-top"><span class="stack-symbol">☁</span><span class="stack-index">01</span></div>
+                    <div class="stack-label">THE HOST</div>
+                    <h3>Amazon S3</h3>
+                    <p>Static website hosting, served straight from your bucket. No server to look after.</p>
+                    <div class="stack-tag">OBJECT STORAGE</div>
+                </article>
+                <article class="stack-card stack-python">
+                    <div class="stack-card-top"><span class="python-symbol">Py</span><span class="stack-index">02</span></div>
+                    <div class="stack-label">THE AUTOMATION</div>
+                    <h3>Python + Boto3</h3>
+                    <p>A small script provisions your setup and uploads files through the AWS SDK.</p>
+                    <div class="stack-tag">AWS SDK FOR PYTHON</div>
+                </article>
+                <article class="stack-card stack-web">
+                    <div class="stack-card-top"><span class="web-symbol">&lt;/&gt;</span><span class="stack-index">03</span></div>
+                    <div class="stack-label">THE WEBSITE</div>
+                    <h3>Web essentials</h3>
+                    <p>Plain HTML, CSS, and JavaScript. Edit your files and deploy again when you're ready.</p>
+                    <div class="stack-tag">NO BUILD REQUIRED</div>
+                </article>
+            </div>
+        </section>
+
+        <section class="get-started" id="get-started">
+            <div class="page-wrap start-layout">
+                <div class="start-copy">
+                    <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT STEP</div>
+                    <h2>Make something.<br><span>Put it out there.</span></h2>
+                    <p>Bring your AWS credentials, pick a bucket name, and run the deploy script from your project folder.</p>
+                    <div class="start-actions">
+                        <button class="button button-lime copy-button" type="button" data-copy="python deploy.py">
+                            <span class="copy-label">Copy deploy command</span>
+                            <span class="copy-icon" aria-hidden="true">⧉</span>
+                        </button>
+                        <span class="copy-status" role="status" aria-live="polite"></span>
+                    </div>
+                </div>
+                <div class="terminal" aria-label="Example deployment command">
+                    <div class="terminal-bar"><span class="terminal-dots"><i></i><i></i><i></i></span><span>YOUR TERMINAL</span><span class="terminal-ready"><i></i> READY</span></div>
+                    <div class="terminal-body">
+                        <div class="terminal-line"><span class="terminal-prompt">$</span><span>python deploy.py</span></div>
+                        <div class="terminal-output">Starting S3 website deployment...</div>
+                        <div class="terminal-output terminal-success"><span>✓</span> Website files uploaded successfully.</div>
+                        <div class="terminal-output terminal-url">→ Your website URL is ready to share.</div>
+                        <div class="terminal-cursor" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar page-wrap">
+                <a class="brand footer-brand" href="#" aria-label="CloudCanvas home"><span class="brand-mark" aria-hidden="true">↗</span><span>cloudcanvas<span class="brand-period">.</span></span></a>
+                <span>Small sites. Big possibilities.</span>
+                <a class="back-top" href="#main">Back to top ↑</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
